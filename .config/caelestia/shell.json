@@ -369,7 +369,7 @@
                 "command": [
                     "caelestia",
                     "shell",
-                    "controlCenter",
+                    "nexus",
                     "open"
                 ],
                 "dangerous": false,
