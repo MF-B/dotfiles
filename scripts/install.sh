@@ -39,8 +39,6 @@ install_path ".config/foot/foot.ini"
 install_path ".config/fish/config.fish"
 install_path ".config/fish/functions/fish_greeting.fish"
 
-install_path ".local/bin/caelestia-location"
-
 if [[ -d "$backup_dir" ]]; then
     printf 'existing files backed up to %s\n' "$backup_dir"
 fi
