@@ -10,3 +10,6 @@
 
 # Fish universal variables often contain machine-local state.
 .config/fish/fish_variables
+
+# Location fingerprints stay local and are intentionally not tracked.
+.local/state/

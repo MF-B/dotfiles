@@ -50,4 +50,6 @@ copy_file ".config/foot/foot.ini"
 copy_file ".config/fish/config.fish"
 copy_file ".config/fish/functions/fish_greeting.fish"
 
+copy_file ".local/bin/caelestia-location"
+
 printf 'dotfiles refreshed from %s\n' "$HOME"

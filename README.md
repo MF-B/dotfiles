@@ -8,6 +8,7 @@ This repo intentionally stores a conservative subset of configuration:
 - Caelestia user config: `.config/caelestia`
 - Foot terminal config: `.config/foot/foot.ini`
 - Fish shell entry config and greeting function
+- Caelestia coarse location helper: `.local/bin/caelestia-location`
 
 The Caelestia shell source itself is managed separately at:
 
@@ -41,3 +42,6 @@ while the desktop is being actively debugged.
 
 Do not commit API tokens, weather keys, SSH keys, Wi-Fi BSSIDs, or precise
 location data. Put tokens in environment variables or untracked local files.
+
+`caelestia-location` stores Wi-Fi fingerprints under
+`~/.local/state/caelestia`. They are salted hashes and are not tracked.
