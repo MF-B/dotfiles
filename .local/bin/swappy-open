@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -eu
+
+if [ "$#" -gt 0 ]; then
+    exec swappy -f "$@"
+fi
+
+grim -g "$(slurp)" - | swappy -f -

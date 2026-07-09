@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Swappy
+GenericName=Screenshot Editor
+Comment=Edit screenshots
+TryExec=swappy
+Exec=/home/mf1bzz/.local/bin/swappy-open %F
+Icon=swappy
+Terminal=false
+Categories=Graphics;2DGraphics;RasterGraphics;
+MimeType=image/png;image/jpeg;
