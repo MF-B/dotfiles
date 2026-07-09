@@ -23,7 +23,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-size " .. vars.cursorSize)
 
     -- Location provider and night light
-    hl.exec_cmd("/usr/lib/geoclue-2.0/demos/agent")
+    hl.exec_cmd("/usr/libexec/geoclue-2.0/demos/agent")
     hl.exec_cmd("sleep 1 && gammastep")
 
     -- Forward bluetooth media commands to MPRIS
