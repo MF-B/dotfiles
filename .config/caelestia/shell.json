@@ -426,7 +426,7 @@
     "services": {
         "audioIncrement": 0.1,
         "brightnessIncrement": 0.1,
-        "defaultPlayer": "Spotify",
+        "defaultPlayer": "SPlayer",
         "gpuType": "",
         "maxVolume": 1,
         "playerAliases": [
