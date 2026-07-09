@@ -1,0 +1,26 @@
+{
+  "toggles": {
+    "todo": {
+      "todoist": {
+        "enable": false
+      },
+      "planify": {
+        "enable": true,
+        "match": [
+          {
+            "class": "planify"
+          },
+          {
+            "title": "Planify"
+          }
+        ],
+        "command": [
+          "flatpak",
+          "run",
+          "io.github.alainm23.planify"
+        ],
+        "move": true
+      }
+    }
+  }
+}

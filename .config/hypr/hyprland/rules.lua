@@ -75,8 +75,12 @@ hl.window_rule({
 -- Steam
 hl.window_rule({ match = { class = "steam" }, rounding = 10 })
 
--- WeChat main window
-hl.window_rule({ match = { class = "^wechat$", title = "^Weixin$" }, float = false })
+-- WeChat Linux/XWayland marks its main window as a KDE override window, so it
+-- does not tile reliably. Keep it as a predictable centered communication app.
+local wechatPattern = ".*([Ww]e[Cc]hat|[Ww]eixin).*"
+hl.window_rule({ match = { class = wechatPattern }, float = true, size = "(monitor_w*0.7) (monitor_h*0.75)", center = true })
+hl.window_rule({ match = { initial_class = wechatPattern }, float = true, size = "(monitor_w*0.7) (monitor_h*0.75)", center = true })
+hl.window_rule({ match = { title = wechatPattern }, float = true, size = "(monitor_w*0.7) (monitor_h*0.75)", center = true })
 
 -- Picture in picture (resize and move done via script)
 hl.window_rule({
@@ -117,8 +121,10 @@ hl.window_rule({
     workspace = "special:music",
 })
 hl.window_rule({ match = { initial_title = "Spotify( \\(Free\\))?" }, workspace = "special:music" }) -- Spotify wayland, it has no class for some reason
-hl.window_rule({ match = { class = "discord|equibop|vesktop|whatsapp" }, workspace = "special:communication" })
-hl.window_rule({ match = { class = "Todoist" }, workspace = "special:todo" })
+hl.window_rule({ match = { class = "discord|equibop|vesktop|whatsapp|" .. wechatPattern }, workspace = "special:communication" })
+hl.window_rule({ match = { initial_class = wechatPattern }, workspace = "special:communication" })
+hl.window_rule({ match = { title = wechatPattern }, workspace = "special:communication" })
+hl.window_rule({ match = { class = "[Tt]odoist|.*[Pp]lanify.*|io.github.alainm23.planify" }, workspace = "special:todo" })
 
 -------------------------
 ---- Workspace rules ----
