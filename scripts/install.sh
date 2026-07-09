@@ -25,14 +25,18 @@ install_path() {
 }
 
 install_path ".config/hypr/hyprland.conf"
+install_path ".config/hypr/hyprland.lua"
 install_path ".config/hypr/variables.conf"
+install_path ".config/hypr/variables.lua"
 install_path ".config/hypr/hyprland"
 install_path ".config/hypr/scheme"
 install_path ".config/hypr/scripts"
 
 install_path ".config/caelestia/shell.json"
 install_path ".config/caelestia/hypr-vars.conf"
+install_path ".config/caelestia/hypr-vars.lua"
 install_path ".config/caelestia/hypr-user.conf"
+install_path ".config/caelestia/hypr-user.lua"
 install_path ".config/caelestia/monitors/eDP-1/shell.json"
 
 install_path ".config/foot/foot.ini"

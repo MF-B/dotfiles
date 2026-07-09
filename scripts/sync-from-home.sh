@@ -33,17 +33,22 @@ copy_dir() {
 }
 
 copy_file ".config/hypr/hyprland.conf"
+copy_file ".config/hypr/hyprland.lua"
 copy_file ".config/hypr/variables.conf"
+copy_file ".config/hypr/variables.lua"
 copy_dir ".config/hypr/hyprland"
 copy_dir ".config/hypr/scheme"
 copy_dir ".config/hypr/scripts"
 
 rm -f -- "$repo_root/.config/hypr/hyprland/animations.conf.bak"
 rm -f -- "$repo_root/.config/hypr/scheme/current.conf"
+rm -f -- "$repo_root/.config/hypr/scheme/current.lua"
 
 copy_file ".config/caelestia/shell.json"
 copy_file ".config/caelestia/hypr-vars.conf"
+copy_file ".config/caelestia/hypr-vars.lua"
 copy_file ".config/caelestia/hypr-user.conf"
+copy_file ".config/caelestia/hypr-user.lua"
 copy_file ".config/caelestia/monitors/eDP-1/shell.json"
 
 copy_file ".config/foot/foot.ini"
