@@ -43,6 +43,7 @@ install_path ".config/foot/foot.ini"
 install_path ".config/fish/config.fish"
 install_path ".config/fish/functions/fish_greeting.fish"
 
+install_path ".config/systemd/user/app-lxpolkit@autostart.service"
 install_path ".local/share/applications/swappy.desktop"
 install_path ".local/bin/swappy-open"
 

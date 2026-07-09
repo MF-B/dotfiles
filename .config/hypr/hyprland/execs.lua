@@ -8,7 +8,7 @@ hl.on("hyprland.start", function()
 
     -- Keyring and auth
     hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
-    hl.exec_cmd("lxpolkit")
+    hl.exec_cmd("pkill -x lxpolkit || true; systemctl --user start plasma-polkit-agent.service")
 
     -- Clipboard history
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
