@@ -2,10 +2,28 @@
   "toggles": {
     "todo": {
       "todoist": {
-        "enable": false
+        "enable": true,
+        "match": [
+          {
+            "class": "Todoist"
+          },
+          {
+            "class": "todoist"
+          },
+          {
+            "class": "com.todoist.Todoist"
+          },
+          {
+            "title": "Todoist"
+          }
+        ],
+        "command": [
+          "todoist"
+        ],
+        "move": true
       },
       "planify": {
-        "enable": true,
+        "enable": false,
         "match": [
           {
             "class": "planify"

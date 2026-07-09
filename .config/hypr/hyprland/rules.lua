@@ -124,7 +124,7 @@ hl.window_rule({ match = { initial_title = "Spotify( \\(Free\\))?" }, workspace 
 hl.window_rule({ match = { class = "discord|equibop|vesktop|whatsapp|" .. wechatPattern }, workspace = "special:communication" })
 hl.window_rule({ match = { initial_class = wechatPattern }, workspace = "special:communication" })
 hl.window_rule({ match = { title = wechatPattern }, workspace = "special:communication" })
-hl.window_rule({ match = { class = "[Tt]odoist|.*[Pp]lanify.*|io.github.alainm23.planify" }, workspace = "special:todo" })
+hl.window_rule({ match = { class = ".*[Tt]odoist.*" }, workspace = "special:todo" })
 
 -------------------------
 ---- Workspace rules ----
